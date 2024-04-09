@@ -209,6 +209,65 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ),
+                        const Text("Or\n Sign up With", textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Roboto-Light'
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            CircleAvatar(
+                              radius: 23,
+                              foregroundImage:  AssetImage('asset/images/google.png'),
+                            ),
+                            SizedBox(
+                              width: 50
+                            ),
+                            CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 23,
+                              foregroundImage:  AssetImage('asset/images/facebook.png'),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 60,
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            elevation: 7,
+                            backgroundColor: const Color(0xff6A94DC),
+                            fixedSize: Size(260, 50),
+                            shape: RoundedRectangleBorder(
+                              borderRadius:  BorderRadius.circular(30),
+                            )
+                          ),
+                            onPressed: (){}, child: Center(
+                          child: Text("Create an Account", style: TextStyle(fontSize: 20, color: Colors.white))
+                        )),
+
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width:10
+                            ),
+                            Text("Already have an Account?", style: TextStyle(color: Colors.white),),
+                            TextButton(
+                              style: ButtonStyle(
+                                overlayColor: MaterialStatePropertyAll(Colors.transparent),
+                              ),
+                                onPressed: (){},
+                                child: Text("Sign in",
+                                    style: TextStyle(
+                                        color:Color(0xff6E9AE5))))
+                          ],
+                        )
                       ],
                     ),
                   ),
