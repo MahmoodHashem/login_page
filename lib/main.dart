@@ -69,11 +69,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               )),
            Padding(
-            padding: EdgeInsets.only(left: 15),
+            padding: const EdgeInsets.only(left: 15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(
                       top: 30,
                       bottom: 7
@@ -82,11 +82,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 40,
+                    fontFamily: 'Roboto-Regular',
                     color: Color(0xff6E9AE5),
                   ),
                   ),
                 ),
-                Text("Create an account to get Started",
+                const Text("Create an account to get Started",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white
@@ -94,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 18,
                   ),
                   child: Padding(
@@ -105,18 +106,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 10),
                           child: TextField(
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Color(0xff6386C9),
                             ),
-                            cursorColor: Color(0xff6386C9),
+                            cursorColor: const Color(0xff6386C9),
                             decoration: InputDecoration(
-                              fillColor: Color(0xff101115),
+                              fillColor: const Color(0xff101115),
                               filled: true,
                               hintText: "Name",
-                                contentPadding: EdgeInsets.only(
+                                contentPadding: const EdgeInsets.only(
                                   left: 20,
                                 ),
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Color(0xff373945),
                               ),
                               border: OutlineInputBorder(
@@ -125,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(40),
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xff6386C9),
                                   width: 2,
                                 )
@@ -138,18 +139,18 @@ class _MyHomePageState extends State<MyHomePage> {
                             vertical: 10,
                           ),
                           child: TextField(
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Color(0xff6386C9),
                             ),
-                            cursorColor: Color(0xff6386C9),
+                            cursorColor: const Color(0xff6386C9),
                             decoration: InputDecoration(
-                              fillColor: Color(0xff101115),
+                              fillColor: const Color(0xff101115),
                               filled: true,
                               hintText: "Email",
-                                contentPadding: EdgeInsets.only(
+                                contentPadding: const EdgeInsets.only(
                                   left: 20,
                                 ),
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Color(0xff373945),
                               ),
                               border: OutlineInputBorder(
@@ -158,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(40),
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xff6386C9),
                                   width: 2,
                                 )
@@ -172,18 +173,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           child: TextField(
                             obscureText: _visible,
-                            style: TextStyle(
-                              color: Color(0xff6386C9),
+                            style: const TextStyle(
+                              color:Color(0xff6386C9),
                             ),
-                            cursorColor: Color(0xff6386C9),
+                            cursorColor: const Color(0xff6386C9),
                             decoration: InputDecoration(
-                              fillColor: Color(0xff101115),
+                              fillColor: const Color(0xff101115),
                               filled: true,
-                              contentPadding: EdgeInsets.only(
+                              contentPadding:const EdgeInsets.only(
                                 left: 20,
                               ),
                               hintText: "Password",
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Color(0xff373945),
                               ),
                               suffixIcon: Padding(
@@ -200,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(40),
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0xff6386C9),
                                   width: 2,
                                 )
@@ -211,7 +212,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),
