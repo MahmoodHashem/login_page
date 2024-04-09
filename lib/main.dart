@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         fit: StackFit.expand,
         children: [
           Positioned(
-          left: 300,
+          left: MediaQuery.sizeOf(context).width - 130,
           top: -40,
           child: ClipOval(
             child: Container(
@@ -103,6 +103,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               fillColor: Color(0xff101115),
                               filled: true,
                               hintText: "Name",
+                                contentPadding: EdgeInsets.only(
+                                  left: 20,
+                                ),
                               hintStyle: TextStyle(
                                 color: Color(0xff373945),
                               ),
@@ -133,6 +136,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               fillColor: Color(0xff101115),
                               filled: true,
                               hintText: "Email",
+                                contentPadding: EdgeInsets.only(
+                                  left: 20,
+                                ),
                               hintStyle: TextStyle(
                                 color: Color(0xff373945),
                               ),
@@ -162,6 +168,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             decoration: InputDecoration(
                               fillColor: Color(0xff101115),
                               filled: true,
+                              contentPadding: EdgeInsets.only(
+                                left: 20,
+                              ),
                               hintText: "Password",
                               hintStyle: TextStyle(
                                 color: Color(0xff373945),
