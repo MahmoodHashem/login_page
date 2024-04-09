@@ -31,6 +31,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  bool _visible = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _visible = true;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -161,6 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             vertical: 10,
                           ),
                           child: TextField(
+                            obscureText: _visible,
                             style: TextStyle(
                               color: Color(0xff6386C9),
                             ),
@@ -174,6 +185,14 @@ class _MyHomePageState extends State<MyHomePage> {
                               hintText: "Password",
                               hintStyle: TextStyle(
                                 color: Color(0xff373945),
+                              ),
+                              suffixIcon: Padding(
+                                padding: const EdgeInsets.only(right: 10),
+                                child: IconButton(onPressed: (){
+                                  setState(() {
+                                    _visible = !_visible;
+                                  });
+                                }, icon: Icon(_visible? Icons.visibility : Icons.visibility_off)),
                               ),
                               border: OutlineInputBorder(
                                borderRadius: BorderRadius.circular(40),
